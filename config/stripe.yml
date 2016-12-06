@@ -1,0 +1,9 @@
+development:
+  api_key: 12345
+  api_secret: 6789
+test:
+  api_key: 12345
+  api_secret: 6789
+production:
+  api_key: <%= ENV["STRIPE_API_KEY"] %>
+  api_secret: <%= ENV["STRIPE_API_SECRET"] %>
